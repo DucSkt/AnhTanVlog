@@ -42,9 +42,11 @@ class Charts extends Component {
           messages={this.state.messages}
           currentMember={this.state.member}
         />
-        <Input
-          onSendMessage={this.onSendMessage}
-        />
+        <div style={{position: 'fixed', bottom: 0}}>
+          <Input
+              onSendMessage={this.onSendMessage}
+          />
+        </div>
       </div>
     );
   }
