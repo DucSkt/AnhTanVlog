@@ -12,3 +12,19 @@
 
 // ie fixes
 @import "ie-fix";
+
+.truncate-content {
+    height: 4.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-line;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 3;
+    // -webkit-box-orient: vertical;
+}
+
+.content {
+    white-space: pre-line; // suppot line breaks
+}
