@@ -483,9 +483,10 @@ class Dashboard extends Component {
 
     return (
         <div className="animated fadeIn"style={{width:'100%', height: '100%'}}>
-      <div style={{margin: 'auto'}} >
+      <div >
         <Row>
           <Col xs="12" sm="6" lg="3">
+            <button onClick={()=> {this.props.history.push('/charts')}} style={{backgroundColor: 'transparent' , border: 'unset', marginLeft: window.innerWidth/4, marginTop: window.innerHeight/2-270 }} >
             <Card className="text-white bg-info">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right">
@@ -509,10 +510,11 @@ class Dashboard extends Component {
                 <Line data={cardChartData2} options={cardChartOpts2} height={70} />
               </div>
             </Card>
+            </button>
           </Col>
 
           <Col xs="12" sm="6" lg="3">
-            <button onClick={()=> {this.props.history.push('/charts')}} >
+            <button onClick={()=> {this.props.history.push('/charts')}} style={{backgroundColor: 'transparent' , border: 'unset', marginLeft: 500, marginTop: window.innerHeight/2-270 }} >
             <Card className="text-white bg-primary">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right">
